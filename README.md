@@ -2,10 +2,18 @@
 Vale a pena andar de bike hoje?
 
 
-MYSQL create command:
+MYSQL commands:
 
 ```mysql
-create table users (
+CREATE DATABASE bike;
+```
+
+```mysql
+USE bike;
+```
+
+```mysql
+CREATE TABLE users (
 ID INT(11) not null auto_increment,
 EMAIL varchar(64) not null,
 IMAGE mediumblob,
