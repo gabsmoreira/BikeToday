@@ -1,3 +1,5 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,7 +10,7 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="shortcut icon" href="./img/002-bicycle-3.png">
+    <link rel="shortcut icon" href="img/002-bicycle-3.png">
         <title>Vale a pena andar de bike?</title>
   </head>
 
@@ -21,7 +23,6 @@
     <nav>
         <div class="nav-wrapper  green accent-4">
             <a href="#" class="brand-logo"><i class="large material-icons">directions_bike</i></a>
-            <div class="center-align"> VALE A PENA ANDAR DE BIKE?</div>
         </div>
     </nav>
 
@@ -31,7 +32,7 @@
         <div class="row">
             <div class="col s12 m2 l2"><p></p></div>
             <div class="col s12 m8 l8 z-depth-3">
-                    <form action="efetuaRegistro" method="post">
+                    <form action="efetuaRegistro" method="post" enctype="multipart/form-data">
                         <div class="row">
                             <div class="input-field col s12">
                             <i class="material-icons prefix">email</i>
@@ -59,7 +60,7 @@
                                 <button class="btn waves-effect waves-light green accent-3" type="submit" >Registrar
                                         <i class="material-icons right"></i>
                                 </button>
-                                <a class="waves-effect waves-light btn green accent-3" href="login.html" style="margin-left:5%;">Login</a>
+                                <a class="waves-effect waves-light btn green accent-3" href="login" style="margin-left:5%;">Login</a>
                                 </button>
                                 </div>
                         </div>

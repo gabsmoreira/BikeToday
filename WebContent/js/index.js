@@ -108,8 +108,7 @@ function fetchWeather(city){
 
 $(document).ready(function() {
   $('select').material_select();
-  localStorage.setItem("time_value_person", 10000)  
-
+  localStorage.setItem("time_value_person", 10000)
   $( "#search_button").click(function() {
     var start = document.getElementById('start').value;
     var end = document.getElementById('end').value;
@@ -181,8 +180,8 @@ $(document).ready(function() {
         }          
       })
     })
+    showModal();
     // api.openweathermap.org/data/2.5/weather?q=London&APPID=001b0f58045147663b1ea518d34d88b4
-    showModal()  
   });
 });
 

@@ -1,15 +1,13 @@
-
-<!DOCTYPE html>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <html>
   <head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="shortcut icon" href="./img/002-bicycle-3.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="Content-Type"/>
+    <link rel="shortcut icon" href="img/002-bicycle-3.png">
     <title>Vale a pena andar de bike?</title>
   </head>
 
@@ -32,12 +30,12 @@
         <div class="row">
             <div class="col s12 m2 l2"></div>
             <div class="col s12 m8 l8 z-depth-3">
-                    <form>
+                    <form action="efetuaLogin" method="post" enctype="multipart/form-data">
                         <div class="row">
                             <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
                             <input id="icon_prefix" type="text" class="validate" name="username">
-                            <label for="icon_prefix">Usu·rio</label>
+                            <label for="icon_prefix">Usu√°rio</label>
                             </div>
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">lock</i>
@@ -48,7 +46,7 @@
                                     <button class="btn waves-effect waves-light green accent-3" type="submit" >Login
                                             <i class="material-icons right"></i>
                                     </button>
-                                    <a class="waves-effect waves-light btn green accent-3" href="register.html" style="margin-left:5%;">Registrar</a>
+                                    <a class="waves-effect waves-light btn green accent-3" href="register" style="margin-left:5%;">Registrar</a>
                                     </button>
                                     </div>
                         </div>

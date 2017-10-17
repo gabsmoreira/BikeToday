@@ -1,6 +1,12 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+
 <!DOCTYPE html>
 <html>
+
   <head>
+  
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -10,7 +16,8 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="shortcut icon" href="./img/002-bicycle-3.png">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/002-bicycle-3.png">
     
     <style>
         /* Always set the map height explicitly to define the size of the div
@@ -40,7 +47,7 @@
         <div class="nav-wrapper  green accent-4">
             <a href="#" class="brand-logo"><i class="large material-icons">directions_bike</i></a>
             <ul id="nav-mobile" class="right" >
-                <li ><a href="#" s><img src="./img/profile.jpg" style="height:45px; width:45px; margin-top:20%;" class="circle responsive-img"></a></li>
+                <li ><a href="#" ><img src=getImage?login=${usuarioLogado} data-activates='dropdown1' style="height:45px; width:45px; margin-top:20%;" class="dropdown-button circle responsive-img"></a></li>
             </ul>
         </div>
     </nav>
@@ -127,7 +134,6 @@
                     if (status === 'OK') {
                       directionsDisplay.setDirections(response);
                     } else {
-                        console.log("Não consegui achar direçōes")
                     }
                   });
                 }
@@ -202,10 +208,15 @@
         </div>
         </div>
         <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+          <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
         </div>
       </div>
     </div>
+    <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#">Settings</a></li>
+    <li><a href="logout">Logout</a></li>
+    
+  </ul>
 
   </body>
 

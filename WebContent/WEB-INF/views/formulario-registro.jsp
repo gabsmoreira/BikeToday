@@ -10,10 +10,10 @@
 
 <h2>Registro de usuário</h2>
 <form action="efetuaRegistro" method="post" enctype="multipart/form-data">
- Login: <input type="text" name="username" /> <br/>
- Email: <input type="text" name="email" /> <br/>
+ Login: <input type="text" name="USERNAME" /> <br/>
+ Email: <input type="text" name="EMAIL" /> <br/>
  Senha: <input type="password" name="password" /> <br/>
- Foto: <input type="file" name="image"/> <br/><br/>
+ Foto: <input type="file" name="IMAGE"/> <br/><br/>
  <input type="submit" value="Registrar" />
 </form>
 
