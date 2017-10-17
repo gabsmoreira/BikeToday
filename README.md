@@ -3,6 +3,8 @@ Vale a pena andar de bike hoje?
 
 
 MYSQL create command:
+
+```mysql
 create table users (
 ID INT(11) not null auto_increment,
 EMAIL varchar(64) not null,
@@ -15,3 +17,5 @@ PRIMARY KEY (ID),
 UNIQUE (EMAIL),
 UNIQUE (USERNAME)
 );
+```
+
